@@ -61,7 +61,7 @@ h1,p{
   height: 100%;
   position: absolute;
   right: 50%;
-  width: 100%;  
+  width: 100%;
 }
 @keyframes animate {
   0%{
@@ -84,5 +84,51 @@ h1,p{
   }
   100%{
     transform: rotate(45deg)translate(10px,10px) scale(1.2);
+  }
+}
+/* media queries */
+/* iPad Pro */
+@media only screen and (min-width: 1024px) {
+  .center{
+    padding: 250px;
+  }
+  .heart{
+    height: 200px;
+    width: 200px;
+  }
+  #btnDiv{
+    bottom: 0;
+    padding: 10%;
+    width: 100%;
+  }
+}
+/* iPad */
+@media only screen and (max-width: 768px) {
+  .center{
+    padding: 200px;
+  }
+  .heart{
+    height: 125px;
+    width: 125px;
+  }
+}
+/* iPhone 6/7/8 */
+@media only screen and (max-width: 414px) {
+  .center{
+    padding: 100px;
+  }
+  .heart{
+    height: 90px;
+    width: 90px;
+  }
+}
+/* iPhone 5/SE */
+@media only screen and (max-width: 320px) {
+  .center{
+    padding: 75px;
+  }
+  .heart{
+    height: 60px;
+    width: 60px;
   }
 }
