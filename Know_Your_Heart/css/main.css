@@ -1,0 +1,88 @@
+body{
+  background: #262626;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+h1,p{
+  text-align: center;
+}
+#btnDiv{
+  bottom: 0;
+  padding: 6%;
+  position: fixed;
+  width: 100%;
+}
+.center{
+  background: #262626;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  box-shadow: 45px 45px 45px rgba(0, 0, 0, 0.8);
+  left: 50%;
+  overflow: hidden;
+  padding: 100px;
+  position: absolute;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.center:before{
+  background: rgba(0, 0, 0, 0.3);
+  content: '';
+  height: 100%;
+  left: -50%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.heart{
+  animation: animate 1s linear infinite;
+  background: #f00;
+  height: 100px;
+  position: relative;
+  transform: rotate(45deg)translate(10px,10px);
+  width: 100px;
+}
+.heart:before{
+  background: #f00;
+  border-radius: 50%;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -50%;
+  width: 100%;
+}
+.heart:after{
+  background: #f00;
+  border-radius: 50%;
+  bottom: 0;
+  content: '';
+  height: 100%;
+  position: absolute;
+  right: 50%;
+  width: 100%;  
+}
+@keyframes animate {
+  0%{
+    transform: rotate(45deg)translate(10px,10px) scale(1);
+  }
+  25%{
+    transform: rotate(45deg)translate(10px,10px) scale(1);
+  }
+  30%{
+    transform: rotate(45deg)translate(10px,10px) scale(1.2);
+  }
+  50%{
+    transform: rotate(45deg)translate(10px,10px) scale(1.4);
+  }
+  70%{
+    transform: rotate(45deg)translate(10px,10px) scale(1.2);
+  }
+  90%{
+    transform: rotate(45deg)translate(10px,10px) scale(1.4);
+  }
+  100%{
+    transform: rotate(45deg)translate(10px,10px) scale(1.2);
+  }
+}
