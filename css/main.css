@@ -6,6 +6,7 @@ body{
 }
 h1,p{
   text-align: center;
+  padding: 0 5%;
 }
 #btnDiv{
   bottom: 0;
@@ -87,48 +88,64 @@ h1,p{
   }
 }
 /* media queries */
-/* iPad Pro */
-@media only screen and (min-width: 1024px) {
-  .center{
-    padding: 250px;
-  }
-  .heart{
-    height: 200px;
-    width: 200px;
-  }
-  #btnDiv{
-    bottom: 0;
-    padding: 10%;
-    width: 100%;
-  }
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .center{
+      padding: 175px;
+    }
+    .heart{
+      height: 125px;
+      width: 125px;
+    }
 }
-/* iPad */
-@media only screen and (max-width: 768px) {
-  .center{
-    padding: 130px;
-  }
-  .heart{
-    height: 105px;
-    width: 105px;
-  }
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .center{
+      padding: 200px;
+    }
+    .heart{
+      height: 150px;
+      width: 150px;
+    }
 }
-/* iPhone 6/7/8 */
-@media only screen and (max-width: 414px) {
-  .center{
-    padding: 100px;
-  }
-  .heart{
-    height: 90px;
-    width: 90px;
-  }
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .center{
+      padding: 100px;
+    }
+    .heart{
+      height: 80px;
+      width: 80px;
+    }
 }
-/* iPhone 5/SE */
-@media only screen and (max-width: 320px) {
-  .center{
-    padding: 75px;
-  }
-  .heart{
-    height: 60px;
-    width: 60px;
-  }
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .center{
+      padding: 75px;
+    }
+    .heart{
+      height: 50px;
+      width: 50px;
+    }
 }
